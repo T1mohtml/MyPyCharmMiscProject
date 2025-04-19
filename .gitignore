@@ -3,6 +3,22 @@ Weather/encrypt/idkd.py
 Map/Encode.py
 /clear_git_history.sh
 Weather/Script1.spec
-.venv
-.idea
+
+# Ignore virtual environment
+.venv/
+venv/
+ENV/
+env/
+
+# Ignore PyCharm settings
+.idea/
+
+# Ignore compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore macOS system files
+.DS_Store
 
