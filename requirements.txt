@@ -1,3 +1,4 @@
+altgraph==0.17.4
 annotated-types==0.7.0
 anyio==4.8.0
 blinker==1.9.0
@@ -21,9 +22,11 @@ Jinja2==3.1.6
 jiter==0.8.2
 Kivy==2.3.1
 Kivy-Garden==0.1.5
+macholib==1.16.3
 MarkupSafe==3.0.2
 openai==1.63.0
 osascript==2020.12.3
+packaging==24.2
 pillow==11.1.0
 psutil==6.1.1
 pycparser==2.22
@@ -31,6 +34,8 @@ pydantic==2.10.5
 pydantic_core==2.27.2
 pygame==2.6.1
 Pygments==2.19.1
+pyinstaller==6.13.0
+pyinstaller-hooks-contrib==2025.3
 python-dotenv==1.1.0
 requests==2.32.3
 runcmd==2020.12.3
