@@ -1,0 +1,3 @@
+([('Script1',
+   '/Users/Timo/PyCharmMiscProject/Weather/dist/Script1',
+   'EXECUTABLE')],)
