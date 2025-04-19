@@ -22,3 +22,7 @@ __pycache__/
 # Ignore macOS system files
 .DS_Store
 
+# Ignore build and dist directories from PyInstaller
+build/
+dist/
+*.spec
