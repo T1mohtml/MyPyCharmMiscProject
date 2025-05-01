@@ -37,11 +37,12 @@ def result():
     if user == "y":
         response = "Calculating answer... you are a nincompoop!"
     elif user == "n":
-        response = """Error code 4: Are you sure? <form method='post' action='/confirm'>
-               <input type='hidden' name='initial_input' value='n'>
-               <input type='submit' name='confirmation' value='Yes'>
-               <input type='submit' name='confirmation' value='No'>
-           </form>"""
+        response = """Error code 4: Are you sure? 
+            <form method='post' action='/confirm'>
+                <input type='hidden' name='initial_input' value='n'>
+                <input type='submit' name='confirmation' value='Yes' id='yes'>
+                <input type='submit' name='confirmation' value='No' id='no'>
+            </form>"""
         return response
     else:
         response = "Type y or n you nincompoop"
