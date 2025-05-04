@@ -1,30 +1,24 @@
 from graphviz import Digraph
 
-# Create a directed graph
-dot = Digraph(comment='Rejsekort Travel Flow')
+dot = Digraph(comment="My Dad's Logic when it comes to gaming on MY pc")
 
-# Define nodes
-dot.node('A', 'Tap Rejsekort\n(Check-in)')
-dot.node('B', 'Card saves check-in data\n(Location, Time, Type)')
-dot.node('C', 'Terminal sends check-in\nto backend server (if online)')
-dot.node('D', 'Travel...\n(card carries journey state)')
-dot.node('E', 'Tap Rejsekort again\n(Check-out)')
-dot.node('F', 'Terminal reads check-in data\nfrom card')
-dot.node('G', 'Terminal calculates fare')
-dot.node('H', 'Terminal sends completed trip\nto backend server')
-dot.node('I', 'Backend updates final balance\nand travel history')
 
-# Define edges between nodes
-dot.edges([('A', 'B'), ('B', 'C'), ('B', 'D'),
-           ('D', 'E'), ('E', 'F'), ('F', 'G'),
-           ('G', 'H'), ('H', 'I')])
+dot.node("A", "Is Timo\nsleeping?")
+dot.node("B", "Is Timo on\nthe computer?")
+dot.node("C", "Does mom have\na work day?")
+dot.node("D", "Is mom\nsleeping?")
+dot.node("E", "FU** i can't,\nplay games :(")
+dot.node("F", "I CAN PLAY\nGAMES! :D")
 
-# Corrected output path for cross-platform compatibility
-output_path = 'rejsekort_flowchart'
+dot.edge("A", "B", label="No")
+dot.edge("A", "E", label="Yes")
+dot.edge("B", "C", label="No")
+dot.edge("B", "E", label="Yes")
+dot.edge("C", "D", label="No")
+dot.edge("C", "E", label="Yes")
+dot.edge("D", "F", label="No")
+dot.edge("D", "E", label="Yes")
 
-try:
-    # Render the graph and save it as a PNG file
-    dot.render(output_path, format='png', cleanup=True)
-    print(f'Flowchart saved to {output_path}.png')
-except Exception as e:
-    print(f"An error occurred: {e}")
+
+print(f"Saved to: {dot.source}")
+dot.render("My Dads logic when it comes to gaming on MY pc", format='png', view=True)
